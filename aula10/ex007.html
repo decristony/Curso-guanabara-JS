@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        
+        font: normal 18pt arial;
+        
+      }
+      input {
+       font: normal 15pt arial;
+       width: 180px;
+      
+      }
+      div.result{
+        margin-top: 20px;
+        transition: 1s;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txn1" id="1" placeholder="digite um numero" /> +
+
+    <input type="number" name="txn2" id="2" placeholder="digite um numero" />
+
+    <input type="button" value="Somar" onclick="somar()" />
+    <div id="res" class="result" onclick="mouse">Resultado</div>
+
+    <script>
+      function somar() {
+        var n1 = document.getElementById("1");
+        var n2 = document.getElementById("2");
+        var res = document.getElementById("res");
+        var num1 = Number(n1.value);
+        var num2 = Number(n2.value);
+        s = num1 + num2;
+        res.innerHTML = `A soma de ${num1} + ${num2} é igual á ${s} `;
+        res.style.background = "gold";
+        res.style.width = "600px";
+        res.style.height = "100px";
+        res.style.lineHeight = "100px";
+        res.style.textAlign = "center";
+        res.addEventListener('mouseenter',entrar)
+        res.addEventListener('mouseout',sair)
+        function entrar(){
+          res.style.background="green";
+          res.style.color="white";
+
+        }
+        function sair(){
+          res.style.background="gold";
+          res.style.color="black";
+        }
+      }
+    </script>
+  </body>
+</html>

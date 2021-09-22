@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventosDOM</title>
+    <style>
+      div#area {
+        font: normal 20pt arial;
+        background: green;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: .5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area" >
+      Interaja...</div>
+
+      <script>
+        var a= document.getElementById('area')
+        a.addEventListener('click',click)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseleave',sair)
+        
+        function click(){
+          a.style.background='black'
+          a.innerText="clicou"
+          a.style.width="220px"
+          a.style.height="220px"
+          a.style.lineHeight='220px';
+
+         
+        }
+        function entrar(){
+          a.style.background='red'
+          a.innerText="entrou"
+          a.style.width="220px"
+          a.style.height="220px"
+          a.style.lineHeight='220px';
+        }
+        function sair(){
+          a.style.background='green'
+          a.innerText="saiu"
+          a.style.width="200px"
+          a.style.height="200px"
+          a.style.lineHeight='200px';
+
+         
+        }
+
+      </script>
+    
+    </script>
+  </body>
+</html>
