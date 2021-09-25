@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+
+      }
+      button {
+        width: 300px;
+        height: 300px;
+        margin:20px;
+        text-align: center;
+        line-height: 300px;
+        font-size: 20pt ;
+        background-color: rgb(212, 93, 93);
+        color: white;
+        border-radius: 5px;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" id="1" onclick="mudarcor1()">Azul</button>
+    <button type="button" id="2" onclick="mudarcor2()">Verde</button>
+    <button type="button" id="3" onclick="mudarcor3()">Vermelho</button>
+
+    <script>
+      btn1 = document.getElementById("1");
+      btn2 = document.getElementById("2");
+      btn3 = document.getElementById("3");
+
+      function mudarcor1() {
+       document.bgColor = "blue";
+             }
+      function mudarcor2() {
+        document.bgColor = "green";
+      }
+      function mudarcor3() {
+        document.bgColor = "red";
+      }
+    </script>
+  </body>
+</html>

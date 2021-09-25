@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio color</title>
+  </head>
+  <body>
+    <div id="saudacao"></div>
+
+    <script>
+      var now = new Date();
+      var hora = now.getHours();
+      var colorback = document.querySelector("body");
+      var ola = document.getElementById("saudacao");
+
+      if (hora < 12) {
+        colorback.style.background = "orange";
+        ola.innerHTML = "Bom dia";
+        ola.style.color = "white";
+        ola.style.margin = "auto";
+        ola.style.textAlign = "center";
+      } else if (hora < 18) {
+        colorback.style.background = "green";
+        ola.innerHTML = "Boa tarde";
+        ola.style.color = "white";
+        ola.style.margin = "auto";
+        ola.style.textAlign = "center";
+        ola.style.marginTop = "50%";
+      } else {
+        colorback.style.background = "black";
+        ola.innerHTML = "Boa noite";
+        ola.style.color = "white";
+        ola.style.margin = "auto";
+        ola.style.textAlign = "center";
+      }
+    </script>
+  </body>
+</html>
