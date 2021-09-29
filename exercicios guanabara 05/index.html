@@ -11,25 +11,22 @@
   <body >
    
     <header>
-     <h1>Tabuada</h1>
+     <h1>Analisador de Números</h1>
     </header>
     <section>
-     <p>Numero:
-        <input type="number"name="num" id="primeiro" >
-     </p>
-     <p>
-      <input type="button" value="Gerar Tabuada" onclick="tabuada()">
-    </p>
-    
-   <p>
-     <select name="" id="select" size="10">
-
-   </select>
-  </p>
-     <div id="res">Bora contar!</div>
+     <div>
+        Número (entre 1 e 100):
+        <input type="number"name="fnum" id="fnum" >
+        <input type="button" value="Adicionar" onclick="adicionar()">
+        <br><select name="flista" id="flista" size="6"></select>
+        <p><input type="button" value="Finalizar" onclick="GerarArray()"></p>
+     </div>
+     <br>
+      <div id="resumo">Resumo do array</div>
     </section >
-    <footer >
-      <p>&copy;Curso em Video</p>
+    <footer class="footer">
+      <p >&copy;Curso em Video</p>
+      <p >Dev Creator : Decristony Sousa</p>
     </footer>
 
   </body>
