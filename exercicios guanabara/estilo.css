@@ -6,9 +6,7 @@ body {
   background: 100vh;
 }
 
-header {
-  
-}
+
 *{
   font-family:'Roboto Mono', monospace ;
 }
@@ -31,9 +29,8 @@ section:hover {
 }
 
 
-h1,
-p {
-  color     : white;
+h1,p {
+  
   text-align: center;
   font-size: .9rem;
 }
@@ -62,6 +59,7 @@ div {
 .typing-animation{
   animation: blikCursor 600ms infinite normal ,typing 4s steps(40) 1s normal both;
 }
+
 .typing-animation2{
   animation: blikCursor2 600ms infinite normal ,typing2 4s steps(40) 6s normal both;
 }
